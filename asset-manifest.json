@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/shoppingweb/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/shoppingweb/static/js/main.f2048726.chunk.js",
+    "main.js.map": "/shoppingweb/static/js/main.f2048726.chunk.js.map",
+    "runtime-main.js": "/shoppingweb/static/js/runtime-main.cbf40abc.js",
+    "runtime-main.js.map": "/shoppingweb/static/js/runtime-main.cbf40abc.js.map",
+    "static/js/2.b8e0a936.chunk.js": "/shoppingweb/static/js/2.b8e0a936.chunk.js",
+    "static/js/2.b8e0a936.chunk.js.map": "/shoppingweb/static/js/2.b8e0a936.chunk.js.map",
+    "index.html": "/shoppingweb/index.html",
+    "precache-manifest.080dc057eb78d3c530b8d358ee89028a.js": "/shoppingweb/precache-manifest.080dc057eb78d3c530b8d358ee89028a.js",
+    "service-worker.js": "/shoppingweb/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/shoppingweb/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.b8e0a936.chunk.js.LICENSE.txt": "/shoppingweb/static/js/2.b8e0a936.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cbf40abc.js",
+    "static/js/2.b8e0a936.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.f2048726.chunk.js"
+  ]
+}
