@@ -8,13 +8,15 @@ import styled from 'styled-components'
 import Home from '../../pages/Home'
 import Test from '../../pages/Test'
 import Item from '../../pages/Item'
+import JoinIn from '../../pages/JoinIn'
 import Dress from './Dress'
-import Login from '../../pages/Login'
+import Edit from '../../pages/EditId'
+import Admin from '../../pages/Admin'
 
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import NavButton from './NavButton'
 
-const arr = ["", "dress", "test", "item", "login"];
+const arr = ["", "dress", "test"];
 
 class Nav extends Component {
     render() {
@@ -31,9 +33,9 @@ class Nav extends Component {
 
             {/*To add lists you should add a component in Route after adding list in the array */}
         <Switch>                    
-        <Route path="/login">
-              <Login />
-          </Route>
+          <Route path="/admin" children={<Admin />} />
+          <Route path="/edit/:id" children={<Edit />} />
+          <Route path="/join" children={<JoinIn />} />
           <Route path="/dress">
               <Dress />
           </Route>

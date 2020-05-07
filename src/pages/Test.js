@@ -1,41 +1,33 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 
-const myurl = "http://localhost:3001/customers";
-
-class Home extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-           api : []
-       }
-       this.postlogin = this.postlogin.bind(this);
-}
-
-    postlogin(event) {
-        event.preventDefault();
-        axios.post(myurl, {
-            name: this.name.value,
-            email: this.email.value
-          })
-          .then(function (response) {
-            console.log(response);
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
+class Test extends Component {
+    constructor() {
+        super();
+        this.onSignIn = this.onSignIn.bind(this);
     }
+    
+    onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+    }
+
     render() {        
         return (
             <div>
-                <form onSubmit={this.postlogin}>
-                <input ref={ref => {this.name = ref }} type="text" name="name" placeholder="Username" required />                
-                <input ref={ref => {this.email = ref}} type="text" name="email" placeholder="Email" required />                
-                <input type="submit"/>
-                </form>                
+                <div class="g-signin2" data-onsuccess={this.onSignIn} data-theme="dark">ddd</div>
             </div>
         );
     }
 }
 
-export default Home;
+export default Test;

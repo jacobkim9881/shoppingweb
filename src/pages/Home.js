@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-export default function Home() {
+export default function Home() {    
     return (
         <Main>
             Hello, this is home!

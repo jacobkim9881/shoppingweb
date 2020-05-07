@@ -59,7 +59,12 @@ class Review extends Component {
                 <span onClick={() => this.moveP(">")}>{">"}</span>
                 </center>
                 </Pagination>
-                {this.state.reviews.map(review => <p>{review.id >= sN  && review.id <= bN ? review.body : ""}</p>)}
+                {this.state.reviews.map(review => <p>{review.id >= sN  && review.id <= bN ? 
+                <div>
+                <p>ID : {review.name}</p>
+                <p>Review : {review.body} </p>
+                </div>
+                : ""}</p>)}
             </div>               
         )}
 }
@@ -67,7 +72,7 @@ class Review extends Component {
 export default Review;
 
 const Pagination = styled.div`
-
+    cursor: pointer;
 `
 const Element = styled.span`
 box-sizing: border-box;

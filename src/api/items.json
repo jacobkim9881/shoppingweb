@@ -3,6 +3,18 @@
         "id": 1,
         "title": "Male full suit",
         "price": "300",
-        "photo": "https://static.zara.cn/photos///2020/V/0/2/p/4021/520/401/2/w/560/4021520401_1_1_1.jpg?ts=1578656580918"        
+        "photo": "http://okun.co.kr/shopimages/hehekuk/0550010003122.jpg?1412243459"        
+    },
+    {
+        "id": 2,
+        "title": "Male Jacket",
+        "price": "100",
+        "photo": "https://gababa.co.kr/web/product/big/201811/2ffc33331dd50f84519bb314262b07a5.jpg"        
+    },
+    {
+        "id": 3,
+        "title": "Male pants",
+        "price": "50",
+        "photo": "https://gababa.co.kr/web/product/big/20200305/78b1cadb22152eac1a727a25383c904a.jpg"        
     }
 ]

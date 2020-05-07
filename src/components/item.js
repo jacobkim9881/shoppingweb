@@ -24,6 +24,8 @@ class item extends Component {
 export default item;
 
 const Container = styled.div`
+    display: inline-block;
+    padding 30px;    
     height : 200px;
     width : 150px;
     text-decoration : none;

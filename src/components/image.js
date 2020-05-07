@@ -7,7 +7,7 @@ export default function image({ src }) {
     );
 }
 
-const Image = styled.img`
-    height : 100%;        
-    margin : 0 auto;
+const Image = styled.img`    
+    display: inline-block;
+    height : 100%;     
 `
